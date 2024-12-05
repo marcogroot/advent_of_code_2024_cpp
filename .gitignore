@@ -1,4 +1,5 @@
 /files
 *.out
 
+test.cpp
 a.out.dSYM
