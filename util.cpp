@@ -85,9 +85,8 @@ void print(const std::vector<std::string> &v) {
     return;
   }
   for (std::string x : v) {
-    std::cout << x << " ";
+    std::cout << x << std::endl;
   }
-  std::cout << "\n";
   return;
 }
 
@@ -130,4 +129,20 @@ std::vector<int> string_to_vector(const std::string &str) {
   }
 
   return result;
+}
+
+bool is_valid(int r, int c, const std::vector<std::string> &input) {
+  if (r < 0 || c < 0)
+    return false;
+  if (r >= input.size() || c >= input[0].size())
+    return false;
+  return true;
+}
+
+bool is_valid(int r, int c, const std::vector<std::vector<int>> &input) {
+  if (r < 0 || c < 0)
+    return false;
+  if (r >= input.size() || c >= input[0].size())
+    return false;
+  return true;
 }

@@ -27,4 +27,8 @@ void print(const std::unordered_map<int, std::vector<int>> &m);
 
 std::vector<int> string_to_vector(const std::string &str);
 
+bool is_valid(int r, int c, const std::vector<std::vector<int>> &input);
+
+bool is_valid(int r, int c, const std::vector<std::string> &input);
+
 #endif
