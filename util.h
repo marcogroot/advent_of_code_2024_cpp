@@ -13,6 +13,8 @@ std::vector<std::string> read_strings(std::string file_name);
 
 void print(const std::vector<int> &v);
 
+void print(const std::vector<long long> &v);
+
 void print(const std::vector<std::vector<int>> &v);
 
 void print(const std::vector<std::string> &v);

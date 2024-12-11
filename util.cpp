@@ -51,6 +51,18 @@ void print(const std::vector<int> &v) {
   return;
 }
 
+void print(const std::vector<long long> &v) {
+  if (v.empty()) {
+    std::cout << "empty vector" << std::endl;
+    return;
+  }
+  for (long long x : v) {
+    std::cout << x << " ";
+  }
+  std::cout << "\n";
+  return;
+}
+
 void print(const std::vector<std::vector<int>> &v) {
   if (v.empty()) {
     std::cout << "empty vector" << std::endl;
